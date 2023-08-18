@@ -16,7 +16,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+# HTTP REQUEST  <->  HTTP REsponse
+# DJANGO FUNCIONA NO MODEL VIEW TEMPLATE
+
+
+def home_page(request):
+    print("HOMEPAGE")
+    return HttpResponse("HOME1")
+
+
+def blog(request):
+    print("test")
+    return HttpResponse("One message")
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("blog/", blog),
+    path("", home_page),  # homepage
 ]
