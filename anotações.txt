@@ -1,0 +1,16 @@
+HttpResponse consegue renderizar html e css
+ex HttpResponse(<b> teste </b>)
+
+O render é feito para renderizar html 
+
+Por padrão, o django assegura renderizar arquivos dentro de uma pasta 
+chamada templates, nela cria-se os htmls para utilizar o render
+
+Quando se tem dois arquivos html de mesmo nome se tem conflito 
+independentemente da pasta de origem do arquivo, para corrigir, basta 
+criar uma nova pasta dentro da pasta templates, o nome da pasta deve ser por 
+padrão o nome da aplicação, dentro desta pagina move-se os html. 
+Isso ocorre porque por padrão o django consegue buscar as views dentro de
+templates, dessa forma o primeiro que ele encontra é renderizado
+
+Lembrar de concertar os caminhos caso crie uma pasta dentro do templates
