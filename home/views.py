@@ -7,5 +7,9 @@ def home(request):
 
     return render(
         request,
-        'home/index.html'
+        'home/index.html',
+        {
+            'text': 'We are in home',
+            'title': 'Home'
+        }
         )
