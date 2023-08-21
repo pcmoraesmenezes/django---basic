@@ -14,3 +14,23 @@ Isso ocorre porque por padrão o django consegue buscar as views dentro de
 templates, dessa forma o primeiro que ele encontra é renderizado
 
 Lembrar de concertar os caminhos caso crie uma pasta dentro do templates
+
+{% } -- EM django html isso indica comandos, por exemplo o include 
+
+O include serve para adicionar trechos de outro lugar naquele lugar que você 
+está inserindo, exemplo 
+
+<!-- cabecalho.html -->
+<header>
+    <!-- Conteúdo do cabeçalho -->
+</header>
+
+{% include 'cabecalho.html' %}
+
+<div>
+    <!-- Conteúdo específico da página -->
+</div>
+
+{% include 'rodape.html' %}
+
+É util para evitar repetição de blocos de linha
