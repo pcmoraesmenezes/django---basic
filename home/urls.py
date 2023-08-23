@@ -19,7 +19,8 @@ from home import views as home_views
 # HTTP REQUEST  <->  HTTP REsponse
 # DJANGO FUNCIONA NO MODEL VIEW TEMPLATE
 
+app_name = 'home'
 
 urlpatterns = [
-    path("", home_views.home),  # homepage
+    path("", home_views.home, name='home'),  # homepage
 ]

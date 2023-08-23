@@ -19,8 +19,9 @@ from . import views
 # HTTP REQUEST  <->  HTTP REsponse
 # DJANGO FUNCIONA NO MODEL VIEW TEMPLATE
 
+app_name = 'blog'
 
 urlpatterns = [
-    path("", views.blog),  # homepage
-    path('exemplo/', views.exemplo)
+    path("", views.blog, name='blog'),  # homepage
+    path('exemplo/', views.exemplo, name='exemplo')
 ]
