@@ -1,8 +1,13 @@
 {% include 'global/partials/head.html' %}
 {% include 'global/partials/menu.html' %}
 
-<h1>
+    <h1>
         {% block texto %} BASE {% endblock texto %}
     </h1>
+
+    <main class="posts">
+        {% block posts %}{% endblock posts %}
+    </main>
+
 </body>
 </html>
