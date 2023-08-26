@@ -23,5 +23,6 @@ app_name = 'blog'
 
 urlpatterns = [
     path("", views.blog, name='blog'),  # homepage
+    path("post/<int:id>", views.post, name='post'),  # homepage
     path('exemplo/', views.exemplo, name='exemplo')
 ]
