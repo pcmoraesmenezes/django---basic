@@ -1,13 +1,15 @@
 from django.shortcuts import render
+from blog.data_ import posts
 
 # Create your views here.
 
 
 def blog(request):
-    print("test")
     context = {
         'text': 'Hello blog! ',
-        'title': 'Blog'
+        'title': 'Blog',
+        'posts': posts
+
     }
     return render(
         request,
@@ -17,10 +19,9 @@ def blog(request):
 
 
 def exemplo(request):
-    print('exemplo')
     context = {
         'text': 'Example',
-        'title': 'Example'
+        'title': 'Example',
     }
     return render(
         request,

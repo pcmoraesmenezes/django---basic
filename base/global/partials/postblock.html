@@ -1,10 +1,6 @@
 <article class="post">
     <header>
-     <h2 class="post__title">
-         {% lorem 4 b random %}
-     </h2>
+      <h2 class="post__title">{{ post.title }}</h2>
     </header>
-    <div class="post__body">
-     {% lorem 5 w random %}
-    </div>
- </article>
+    <div class="post__body">{{ post.body }}</div>
+  </article>
