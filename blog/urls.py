@@ -23,6 +23,6 @@ app_name = 'blog'
 
 urlpatterns = [
     path("", views.blog, name='blog'),  # homepage
-    path("<int:id>/", views.post, name='post'),  # homepage
+    path("<int:post_id>/", views.post, name='post'),  # homepage
     path('exemplo/', views.exemplo, name='exemplo')
 ]
